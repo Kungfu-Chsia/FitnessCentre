@@ -6,7 +6,13 @@
   justify-content: space-between;
 
   @media (max-width: $desktop-width) {
+    margin: auto;
     margin-top: 70px;
+    width: 678px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
   }
 }
 
@@ -16,35 +22,48 @@
   line-height: 90px;
   letter-spacing: 0.03em;
   color: $color-default-white;
-  max-width: 244px;
+  width: 69%;
   margin: 0;
+
+  @media (max-width: 1352px) {
+    width: 65%;
+  }
 
   @media (max-width: $desktop-width) {
     font-size: 52px;
     line-height: 52px;
-    max-width: 135px;
+    width: 61%;
   }
 
-  @media (max-width: $tablet-width) {
-    max-width: 123px;
-  }
+  // @media (max-width: $tablet-width) {
+  //   width: 52%;
+  // }
 }
 
 .games__point-wrap {
   display: flex;
   flex-wrap: wrap;
   width: 43%;
-  padding: 80px 79px;
+  padding: 80px 6.6% 7% 79px;
   margin: 0;
 
+  @media (max-width: 1358px) {
+    padding: 80px 4.6% 7% 79px;
+  }
+
+  @media (max-width: 1308px) {
+    padding: 80px 2.6% 7% 79px;
+  }
+
   @media (max-width: $desktop-width) {
-    padding: 48px 45px;
+    padding: 48px 6.6% 7.5% 46px;
     width: 292px;
+    margin-left: auto;
   }
 
   @media (max-width: $tablet-width) {
     padding: 49px 45px 50px;
-    width: 290px;
+    width: 100%;
   }
 }
 
@@ -52,6 +71,10 @@
   @media (max-width: $desktop-width) {
     margin-left: 5px;
     margin-right: -8px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 30%;
   }
 }
 
@@ -83,7 +106,7 @@
   color: $color-default-white;
   align-items: center;
   position: relative;
-  margin-left: 5px;
+  margin-left: 14px;
 
   @media (max-width: $desktop-width) {
     font-size: 12px;
@@ -99,7 +122,7 @@
   display: flex;
   border-top: 1px solid $color-default-white;
   width: 70%;
-  margin-left: 4px;
+  margin-left: 9px;
 
   @media (max-width: $desktop-width) {
     font-size: 24px;
@@ -128,7 +151,7 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-default-white;
-  margin-left: 5px;
+  margin-left: 15px;
 
   @media (max-width: $desktop-width) {
     font-size: 12px;
@@ -141,7 +164,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
-  margin-left: 5px;
+  margin-left: 13px;
 
   @media (max-width: $desktop-width) {
     font-size: 24px;
@@ -158,9 +181,9 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-white;
-  padding: 26px 110px 21px 111px;
+  padding: 24px 111px 18px 110px;
   border: 2px solid $color-default-white;
-  margin-top: 39px;
+  margin-top: 34px;
 
   @media (max-width: $desktop-width) {
     font-size: 10px;
@@ -171,10 +194,13 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
+    text-align: center;
   }
 }
 
 .games__img {
+  width: 57%;
+
   @media (max-width: $desktop-width) {
     width: 386px;
   }

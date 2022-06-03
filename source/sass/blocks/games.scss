@@ -1,3 +1,7 @@
+.games {
+  margin-bottom: 115px;
+}
+
 .games__wrap {
   background-color: $color-bg-red;
   margin-top: 117px;
@@ -56,7 +60,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding: 48px 6.6% 7.5% 46px;
+    padding: 48px 6.6% 6.7% 46px;
     width: 292px;
     margin-left: auto;
   }
@@ -147,11 +151,18 @@
   }
 }
 
+.games__time {
+  @media (max-width: $tablet-width) {
+    max-width: 74px;
+  }
+}
+
 .games__time p {
   font-size: 18px;
   line-height: 27px;
   color: $color-default-white;
   margin-left: 15px;
+  margin-bottom: 4px;
 
   @media (max-width: $desktop-width) {
     font-size: 12px;
@@ -163,8 +174,10 @@
 .games__time p + p {
   font-weight: 700;
   font-size: 40px;
-  line-height: 60px;
+  line-height: 55px;
   margin-left: 13px;
+  border-top: 1px solid $color-default-white;
+  margin-bottom: 0;
 
   @media (max-width: $desktop-width) {
     font-size: 24px;

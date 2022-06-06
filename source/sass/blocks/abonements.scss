@@ -89,6 +89,10 @@
       top: 57px;
       width: 332px;
     }
+
+    @media (max-width: $tablet-width) {
+      width: 290px;
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -347,13 +351,12 @@
     background-size: cover;
     width: 30px;
     height: 42px;
-    left: 135px;
+    left: 110%;
     bottom: 23px;
 
     @media (max-width: $tablet-width) {
       width: 24px;
       height: 33px;
-      left: 109px;
       bottom: 20px;
     }
   }
@@ -405,4 +408,12 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 54px;
   }
+}
+
+.abonements__item-shown {
+  display: none;
+}
+
+.abonements__item--current {
+  display: block;
 }

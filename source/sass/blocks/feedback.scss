@@ -1,0 +1,125 @@
+.feedback {
+  position: relative;
+}
+
+.feedback h3 {
+  font-family: "Bebas Neue", "Arial", monospace;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  position: relative;
+  margin-top: 114px;
+  margin-bottom: 54px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: 94px;
+    margin-bottom: 44px;
+  }
+
+  @media (max-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 67px;
+    margin-bottom: 45px;
+  }
+}
+
+.feedback-swiper {
+  position: relative;
+}
+
+.feedback__swiper-slide {
+  width: 560px;
+  background-color: $color-dark-blue;
+  padding: 61px 61px 56px;
+  display: flex;
+  margin-left: 3px;
+
+  @media (max-width: $desktop-width) {
+    width: 566px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 226px;
+    padding: 40px 26px 36px;
+    display: block;
+  }
+}
+
+.feedback__picture-wrapper {
+  width: 80px;
+  margin: 0;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    float: left;
+    width: 68px;
+    margin-left: 12px;
+    margin-right: 16px;
+  }
+}
+
+.feedback__picture-wrapper img {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+
+  @media (max-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.feedback__swiper-wrapper {
+  justify-content: center;
+}
+
+.feedback__description {
+  margin-left: 28px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.feedback__description h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: $color-default-white;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: -3px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 12px;
+    margin-bottom: 26px;
+  }
+}
+
+.feedback__description p {
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  margin: 0;
+
+  @media (max-width: $desktop-width) {
+    padding-right: 5px;
+  }
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.feedback__button-prev,
+.feedback__button-next {
+  position: absolute;
+}

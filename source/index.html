@@ -80,26 +80,32 @@
           </picture>
         </div>
           <div class="video__wrap">
-            <button class="video__button">
-              <svg class="video__button-play" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_155)" stroke-opacity="0.2" stroke-width="2"/>
-                <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_1_155)"/>
-                <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white"/>
-                <defs>
-                <linearGradient id="paint0_linear_1_155" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444" gradientUnits="userSpaceOnUse">
-                <stop offset="1"  stop-color="#ED0233"/>
-                <stop offset="1" stop-color="#003EB7"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear_1_155" x1="14" y1="49.52" x2="54.1858" y2="9.18415" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#003D85"/>
-                <stop offset="0.885417" stop-color="#B80027"/>
-                </linearGradient>
-                </defs>
-              </svg>
-            </button>
-            <!-- <iframe class="video__frame" width="364" height="288" src="https://www.youtube.com/embed/9TZXsZItgdw" srcdoc="<a href=//www.youtube.com/embed/9TZXsZItgdw?autoplay=1><img src=img/video-l.webp>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-              <iframe class="video__frame" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="autoplay" allowfullscreen></iframe>
-
+            <div class="video__video-wrapper ">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/video-s.webp 1x, img/video-s@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-m.webp 1x, img/video-m@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-l.webp 1x, img/video-l@2x.webp 2x">
+                <!-- 1х: 500px; 2x: 1000px -->
+                <img class="video__img" src="img/video-l.png" srcset="img/video-l@2x.png 2x" alt="фото тренажеров в зале" width="660" height="401"/>
+              </picture>
+              <button class="video__button">
+                <svg class="video__button-play" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_155)" stroke-opacity="0.2" stroke-width="2"/>
+                  <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_1_155)"/>
+                  <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_1_155" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444" gradientUnits="userSpaceOnUse">
+                  <stop offset="1"  stop-color="#ED0233"/>
+                  <stop offset="1" stop-color="#003EB7"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_1_155" x1="14" y1="49.52" x2="54.1858" y2="9.18415" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#003D85"/>
+                  <stop offset="0.885417" stop-color="#B80027"/>
+                  </linearGradient>
+                  </defs>
+                </svg>
+              </button>
+            </div>
           </div>
       </section>
 
@@ -113,9 +119,9 @@
               <li class="abonements__tabs-item"><button class="btn abonements__tabs-btn js-btn" data-id="tab-12month" type="button">12 месяцев</button></li>
             </ul>
           </div>
-          <div class="abonements__wrap abonements__wrap--current">
+          <div class="abonements__wrap abonements__wrap--current" id="tab-month">
             <ul class="abonements__list">
-              <li class="abonements__item abonements__item--current">
+              <li class="abonements__item ">
                 <h4>С тренером</h4>
                 <p>12 занятий</p>
                 <p>5000
@@ -141,9 +147,9 @@
               </li>
             </ul>
           </div>
-          <div class="abonements__wrap">
+          <div class="abonements__wrap" id="tab-6month">
             <ul class="abonements__list">
-              <li class="abonements__item abonements__item--current">
+              <li class="abonements__item">
                 <h4>С тренером</h4>
                 <p>12 занятий</p>
                 <p>2700
@@ -169,9 +175,9 @@
               </li>
             </ul>
           </div>
-          <div class="abonements__wrap">
+          <div class="abonements__wrap" id="tab-12month">
             <ul class="abonements__list">
-              <li class="abonements__item abonements__item--current">
+              <li class="abonements__item">
                 <h4>С тренером</h4>
                 <p>12 занятий</p>
                 <p>50000
@@ -238,6 +244,201 @@
         </div>
       </section>
 
+      <section class="trainers container">
+        <h3>Тренеры</h3>
+        <div class="trainers__swiper swiper image-slider">
+          <div class="image-slider__wrapper image-slider__wrapper swiper-wrapper ">
+            <div class="trainers__swiper-slide image-slider__slide swiper-slide">
+              <div class="trainers__wrap">
+                <div class="trainers__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/anna-p-s.webp 1x, img/anna-p-s@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/anna-p-m.webp 1x, img/anna-p-m@2x.webp 2x">
+                    <source type="image/webp" srcset="img/anna-p-l.webp 1x, img/anna-p-l@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/anna-p-l.png" srcset="img/anna-p-l@2x.png 2x" alt="фото тренера Анны Павловой" width="260" height="294"/>
+                  </picture>
+                  <span class="trainers__name">Анна Павлова</span>
+                </div>
+                <div class="trainers__details">
+                  <h5>Анна Павлова</h5>
+                  <span>CrossFit</span>
+                  <ul class="trainers__details-list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="trainers__swiper-slide image-slider__slide swiper-slide">
+              <div class="trainers__wrap">
+                <div class="trainers__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/alex-s.webp 1x, img/alex-s@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/alex-m.webp 1x, img/alex-m@2x.webp 2x">
+                    <source type="image/webp" srcset="img/alex-l.webp 1x, img/alex-l@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/anna-p-l.png" srcset="img/alex-l@2x.png 2x" alt="фото тренера Алексея Лаврова" width="260" height="294"/>
+                  </picture>
+                  <span class="trainers__name">Алексей Лавров</span>
+                </div>
+                <div class="trainers__details">
+                  <h5>Алексей Лавров</h5>
+                  <span>CrossFit</span>
+                  <ul class="trainers__details-list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="trainers__swiper-slide image-slider__slide swiper-slide">
+              <div class="trainers__wrap">
+                <div class="trainers__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/sahsa-s.webp 1x, img/sahsa-s@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/sahsa-m.webp 1x, img/sahsa-m@2x.webp 2x">
+                    <source type="image/webp" srcset="img/sahsa-l.webp 1x, img/sahsa-l@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/sahsa-l.jpg" srcset="img/sahsa-l@2x.jpg 2x" alt="фото тренера Александра Пашкова" width="260" height="294"/>
+                  </picture>
+                  <span class="trainers__name">Александр Пашков</span>
+                </div>
+                <div class="trainers__details">
+                  <h5>Александр Пашков</h5>
+                  <span>CrossFit</span>
+                  <ul class="trainers__details-list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="trainers__swiper-slide image-slider__slide swiper-slide">
+              <div class="trainers__wrap">
+                <div class="trainers__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/maria-s.webp 1x, img/maria-s@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/maria-m.webp 1x, img/maria-m@2x.webp 2x">
+                    <source type="image/webp" srcset="img/maria-l.webp 1x, img/maria-l@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/maria-l.png" srcset="img/maria-l@2x.png 2x" alt="фото тренера Марии Кетовой" width="260" height="294"/>
+                  </picture>
+                  <span class="trainers__name">Мария Кетова</span>
+                </div>
+                <div class="trainers__details">
+                  <h5>Мария Кетова</h5>
+                  <span>CrossFit</span>
+                  <ul class="trainers__details-list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="trainers__swiper-slide image-slider__slide swiper-slide">
+              <div class="trainers__wrap">
+                <div class="trainers__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/anna-p-s.webp 1x, img/anna-p-s@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/anna-p-m.webp 1x, img/anna-p-m@2x.webp 2x">
+                    <source type="image/webp" srcset="img/anna-p-l.webp 1x, img/anna-p-l@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/anna-p-l.png" srcset="img/anna-p-l@2x.png 2x" alt="фото тренера Инны Павлодаровой" width="260" height="294"/>
+                  </picture>
+                  <span class="trainers__name">Инна Павлодарова</span>
+                </div>
+                <div class="trainers__details">
+                  <h5>Инна Павлодарова</h5>
+                  <span>CrossFit</span>
+                  <ul class="trainers__details-list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="trainers__swiper-slide image-slider__slide swiper-slide">
+              <div class="trainers__wrap">
+                <div class="trainers__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/alex-s.webp 1x, img/alex-s@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/alex-m.webp 1x, img/alex-m@2x.webp 2x">
+                    <source type="image/webp" srcset="img/alex-l.webp 1x, img/alex-l@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/anna-p-l.png" srcset="img/alex-l@2x.png 2x" alt="фото тренера Сергея Лаврова" width="260" height="294"/>
+                  </picture>
+                  <span class="trainers__name">Сергей Лавров</span>
+                </div>
+                <div class="trainers__details">
+                  <h5>Сергей Лавров</h5>
+                  <span>CrossFit</span>
+                  <ul class="trainers__details-list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="trainers__swiper-slide image-slider__slide swiper-slide">
+              <div class="trainers__wrap">
+                <div class="trainers__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/sahsa-s.webp 1x, img/sahsa-s@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/sahsa-m.webp 1x, img/sahsa-m@2x.webp 2x">
+                    <source type="image/webp" srcset="img/sahsa-l.webp 1x, img/sahsa-l@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/sahsa-l.png" srcset="img/sahsa-l@2x.png 2x" alt="фото тренера Алексея Панкова" width="260" height="294"/>
+                  </picture>
+                  <span class="trainers__name">Алексей Панков</span>
+                </div>
+                <div class="trainers__details">
+                  <h5>Алексей Панков</h5>
+                  <span>CrossFit</span>
+                  <ul class="trainers__details-list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="trainers__swiper-slide image-slider__slide swiper-slide">
+              <div class="trainers__wrap">
+                <div class="trainers__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 768px)" srcset="img/maria-s.webp 1x, img/maria-s@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/maria-m.webp 1x, img/maria-m@2x.webp 2x">
+                    <source type="image/webp" srcset="img/maria-l.webp 1x, img/maria-l@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/maria-l.png" srcset="img/maria-l@2x.png 2x" alt="фото тренера Елены Кедровой" width="260" height="294"/>
+                  </picture>
+                  <span class="trainers__name">Елена Кедрова</span>
+                </div>
+                <div class="trainers__details">
+                  <h5>Елена Кедрова</h5>
+                  <span>CrossFit</span>
+                  <ul class="trainers__details-list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="trainers__button-prev swiper-button-prev"></button>
+        <button class="trainers__button-next swiper-button-next"></button>
+      </section>
+
+
       <section class="advantages container">
         <h3>Наши преимущества</h3>
         <ul class="advantages__list">
@@ -293,9 +494,148 @@
         </ul>
       </section>
 
+      <section class="promo">
+        <h3>Акции</h3>
+        <div class="promo__wrap container">
+          <div class="promo__unlim">
+            <div class="promo__year">
+              <h4>Год</h4>
+              <span>4999</span>
+              <p>Безлимитный абонемент в тренажерный зал</p>
+              <a href="#" class="promo__link">подробнее</a>
+            </div>
+            <div class="promo__img">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/blonde-s.webp 1x, img/blonde-s@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/blonde-m.webp 1x, img/blonde-m@2x.webp 2x">
+                <source type="image/webp" srcset="img/blonde-l.webp 1x, img/blonde-l@2x.webp 2x">
+                <!-- 1х: 280px; 2x: 560px -->
+                <img src="img/blonde-l.png" srcset="img/blonde-l@2x.png 2x" alt="фото блондинки в голубом наряде" width="280" height="462"/>
+              </picture>
+            </div>
+          </div>
+          <div class="promo__blocks">
+            <div class="promo__month">
+              <h4>Месяц бесплатно</h4>
+              <p>Приведи друга, получи абонемент в подарок</p>
+              <a href="#" class="promo__link">подробнее</a>
+            </div>
+            <div class="promo__discont">
+              <h4>Скидка 20%</h4>
+              <p>Корпоративный фитнес  с командой</p>
+              <a href="#" class="promo__link">подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback container">
+        <h3>отзывы</h3>
+        <div class="feedback-swiper swiper">
+          <div class="feedback__swiper-wrapper swiper-wrapper">
+            <div class="feedback__swiper-slide swiper-slide">
+              <div class="feedback__picture-wrapper">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/anna-round-s.webp 1x, img/anna-round-s@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/anna-round-m.webp 1x, img/anna-round-m@2x.webp 2x">
+                  <source type="image/webp" srcset="img/anna-round-l.webp 1x, img/anna-round-l@2x.webp 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <img src="img/anna-round-l.png" srcset="img/anna-round-l@2x.png 2x" alt="фото темноволосой девушки" width="80" height="80"/>
+                </picture>
+              </div>
+              <div class="feedback__description">
+                <h4>Анна Орлова</h4>
+                <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                  обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+              </div>
+            </div>
+            <div class="feedback__swiper-slide swiper-slide">
+              <div class="feedback__picture-wrapper">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/anna-round-s.webp 1x, img/anna-round-s@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/anna-round-m.webp 1x, img/anna-round-m@2x.webp 2x">
+                  <source type="image/webp" srcset="img/anna-round-l.webp 1x, img/anna-round-l@2x.webp 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <img src="img/anna-round-l.png" srcset="img/anna-round-l@2x.png 2x" alt="фото темноволосой девушки" width="80" height="80"/>
+                </picture>
+              </div>
+              <div class="feedback__description">
+                <h4>Елена Фролова</h4>
+                <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                  обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+              </div>
+            </div>
+            <div class="feedback__swiper-slide swiper-slide">
+              <div class="feedback__picture-wrapper">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/anna-round-s.webp 1x, img/anna-round-s@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/anna-round-m.webp 1x, img/anna-round-m@2x.webp 2x">
+                  <source type="image/webp" srcset="img/anna-round-l.webp 1x, img/anna-round-l@2x.webp 2x">
+                  <!-- 1х: 80px; 2x: 160px -->
+                  <img src="img/anna-round-l.png" srcset="img/anna-round-l@2x.png 2x" alt="фото темноволосой девушки" width="80" height="80"/>
+                </picture>
+              </div>
+              <div class="feedback__description">
+                <h4>Екатерина Петрова</h4>
+                <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                  обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="feedback__button-prev swiper-button-prev"></button>
+        <button class="feedback__button-next swiper-button-next"></button>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__form">
+            <h3>БЕСПЛАТНОЕ занятие </h3>
+            <div class="contacts__table">
+              <form id="contacts-form" action="https://echo.htmlacademy.ru/" method="post">
+                <div class="contacts__input">
+                  <label class="visually-hidden" for="name">имя</label>
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                </div>
+                <div class="contacts__input">
+                  <label class="visually-hidden" for="telephone">телефон</label>
+                    <input class="js-phone" type="tel" id="telephone" name="telephone" placeholder="Телефон" required>
+                </div>
+                <button class="btn contacts__btn" type="submit" aria-label="отправьте заявку">отправить</button>
+              </form>
+            </div>
+          </div>
+          <div class="contacts__info">
+            <h3>Контакты</h3>
+            <div class="contacts__wrap">
+              <div class="contacts__address">
+                <div>
+                  <h4>Адрес:</h4>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </div>
+                <div class="contacts__time">
+                  <h4>График работы:</h4>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </div>
+              </div>
+              <div class="contacts__phone">
+                <div>
+                  <h4>Телефон:</h4>
+                  <p>8-800-555-55-55</p>
+                </div>
+                <div class="contacts__mail">
+                  <h4>Email:</h4>
+                  <p>omsk@supergym.ru</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-<!--
-    <script src="js/vendor.min.js"></script> -->
-    <script src="js/main.js"></script>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

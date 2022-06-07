@@ -6,7 +6,7 @@
 
 .contacts__wrapper {
   display: flex;
-  padding-top: 800px;
+  padding-top: 801px;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
@@ -129,16 +129,18 @@
 }
 
 .contacts__info {
-  padding: 62px 65px 18px 9%;
+  padding: 58px 65px 18px 9%;
   width: 50%;
+  border-top: 1px solid $color-mouse-grey;
 
   @media (max-width: $desktop-width) {
     width: 100%;
-    padding: 64px 65px 18px 133px;
+    padding: 64px 65px 63px 133px;
+    border-top: none;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 70px 15px 0 15px;
+    padding: 70px 15px 66px 15px;
   }
 }
 

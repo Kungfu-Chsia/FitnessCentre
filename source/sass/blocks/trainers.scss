@@ -13,7 +13,7 @@
 }
 
 .trainers__swiper {
-  display: flex;
+  width: 1160px;
 }
 
 .trainers img {
@@ -134,19 +134,57 @@
   cursor: pointer;
 }
 
-.trainers__button-prev {
-  left: 51px;
-  transform: rotate(225deg);
-}
-
-.trainers__button-next {
-  right: 51px;
-  transform: rotate(45deg);
-}
-
 .trainers__swiper-slide {
   position: relative;
   width: 260px;
   height: 294px;
-  margin-right: 40px;
+}
+
+
+.trainers__button-prev {
+  position: absolute;
+  bottom: 135px;
+  left: 51px;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 1px solid $color-arrow-grey;
+  border-style: solid solid none none;
+  transform: rotate(225deg);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-width) {
+    bottom: 128px;
+    left: 17px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.trainers__swiper-slide .trainers__button-next {
+  position: absolute;
+  bottom: 135px;
+  right: 51px;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 1px solid $color-arrow-grey;
+  border-style: solid solid none none;
+  transform: rotate(45deg);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-width) {
+    bottom: 128px;
+    right: 17px;
+    width: 14px;
+    height: 14px;
+  }
 }

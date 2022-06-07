@@ -1,0 +1,123 @@
+.page-footer {
+  background-color: $color-bg-footer;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 44px;
+  padding-bottom: 44px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 48px;
+    padding-bottom: 45px;
+  }
+}
+
+.page-footer__nav-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 68.9%;
+
+  @media (max-width: $desktop-width) {
+    width: 78.9%;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 47px;
+    column-count: 2;
+    display: block;
+    max-height: 184px;
+    column-gap: 40%;
+  }
+}
+
+.page-footer__icon-logo {
+  @media (max-width: $desktop-width) {
+    width: 82px;
+    height: 18px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 68px;
+    height: 15px;
+  }
+}
+
+.page-footer__social-list {
+  @include list-style;
+  display: flex;
+  justify-content: space-between;
+  min-width: 110px;
+
+  @media (max-width: $desktop-width) {
+    min-width: 100px;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-width: 143px;
+    padding-bottom: 42px;
+  }
+}
+
+.page-footer__nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-footer__sections {
+  margin-left: 42px;
+  margin-bottom: 10px;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 17px;
+  }
+}
+
+.page-footer__sections a {
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.page-footer__logo-wrap {
+  justify-content: start;
+  margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.page-footer__socal-icon-vk {
+  @media (max-width: $tablet-width) {
+    width: 32px;
+    height: 17px;
+  }
+}
+
+.page-footer__socal-icon-insta {
+  @media (max-width: $tablet-width) {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.page-footer__socal-icon-fb {
+  @media (max-width: $tablet-width) {
+    width: 14px;
+    height: 27px;
+  }
+}

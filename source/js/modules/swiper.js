@@ -46,16 +46,18 @@ const initSwiper = function () {
     },
   });
 
-  // const swiperFeedback = new Swiper('.feedback-swiper', {
+  const swiperFeedback = new Swiper('.feedback-swiper', {
 
-  //   navigation: {
-  //     prevEl: '.feedback__button-prev',
-  //     nextEl: '.feedback__button-next',
-  //   },
+    navigation: {
+      prevEl: '.feedback__button-prev',
+      nextEl: '.feedback__button-next',
+    },
 
-  //   simulateTouch: false,
+    loop: false,
+    simulateTouch: false,
+    slidesPerView: 1,
 
-  // });
+  });
 
 
   const trainersButtonPrev = document.querySelector('.trainers__button-prev');

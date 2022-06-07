@@ -29,6 +29,11 @@
 
 .feedback-swiper {
   position: relative;
+  width: 560px;
+
+  @media (max-width: $tablet-width) {
+    width: 70vw;
+  }
 }
 
 .feedback__swiper-slide {
@@ -36,7 +41,6 @@
   background-color: $color-dark-blue;
   padding: 61px 61px 56px;
   display: flex;
-  margin-left: 3px;
 
   @media (max-width: $desktop-width) {
     width: 566px;
@@ -44,7 +48,7 @@
 
   @media (max-width: $tablet-width) {
     width: 226px;
-    padding: 40px 26px 36px;
+    padding: 40px 12px 36px 26px;
     display: block;
   }
 }
@@ -74,7 +78,7 @@
 }
 
 .feedback__swiper-wrapper {
-  justify-content: center;
+  justify-content: start;
 }
 
 .feedback__description {
@@ -99,8 +103,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 12px;
-    margin-bottom: 26px;
+    margin-bottom: 45px;
   }
 }
 
@@ -119,7 +122,66 @@
   }
 }
 
-.feedback__button-prev,
+.feedback__button-prev {
+  position: absolute;
+  top: 60%;
+  left: 21.4%;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 1px solid  $color-arrow-grey;
+  border-style: solid solid none none;
+  transform: rotate(225deg);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1320px) {
+    left: 12.7%;
+  }
+
+  @media (max-width: $desktop-width) {
+    left: 7.6%;
+  }
+
+  @media (max-width: $tablet-width) {
+    left: 5.4%;
+    top: 240px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
 .feedback__button-next {
   position: absolute;
+  top: 60%;
+  right: 21.4%;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 1px solid $color-arrow-grey;
+  border-style: solid solid none none;
+  transform: rotate(45deg);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1320px) {
+    right: 12.7%;
+  }
+
+  @media (max-width: $desktop-width) {
+    right: 7.6%;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 240px;
+    right: 5.4%;
+    width: 14px;
+    height: 14px;
+  }
 }

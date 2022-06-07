@@ -6,7 +6,6 @@
 
 .contacts__wrapper {
   display: flex;
-  padding-top: 801px;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;

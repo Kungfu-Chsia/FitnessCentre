@@ -10,10 +10,35 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 54px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .trainers__swiper {
   width: 1160px;
+
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    width: 860px;
+  }
+
+  @media (max-width: $desktop-width) {
+    max-width: 566px;
+    width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 226px;
+    max-width: 100%;
+  }
 }
 
 .trainers img {
@@ -38,6 +63,10 @@
   font-size: 18px;
   line-height: 27px;
   bottom: -3px;
+
+  @media (max-width: $tablet-width) {
+    left: 20%;
+  }
 }
 
 
@@ -92,6 +121,11 @@
 
 .trainers__details-list {
   margin-left: 33px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    padding-right: 52px;
+  }
 }
 
 .trainers__details-list li {
@@ -99,6 +133,11 @@
   line-height: 21px;
   color: $color-default-white;
   margin-bottom: 14px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .trainers__wrap {
@@ -165,7 +204,7 @@
   }
 }
 
-.trainers__swiper-slide .trainers__button-next {
+.trainers__button-next {
   position: absolute;
   bottom: 135px;
   right: 51px;

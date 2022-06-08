@@ -1,5 +1,13 @@
 .games {
   margin-bottom: 115px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 97px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .games__wrap {
@@ -38,10 +46,6 @@
     line-height: 52px;
     width: 61%;
   }
-
-  // @media (max-width: $tablet-width) {
-  //   width: 52%;
-  // }
 }
 
 .games__point-wrap {
@@ -86,6 +90,10 @@
   margin-bottom: 7px;
 
   @media (max-width: $desktop-width) {
+    margin-bottom: -3px;
+  }
+
+  @media (max-width: $tablet-width) {
     margin-bottom: -1px;
   }
 }
@@ -99,6 +107,10 @@
 
   @media (max-width: $desktop-width) {
     font-size: 12px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $tablet-width) {
     line-height: 18px;
   }
 }
@@ -115,12 +127,13 @@
 
   @media (max-width: $desktop-width) {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 14px;
     margin-left: 17px;
   }
 
   @media (max-width: $tablet-width) {
     margin-bottom: 0;
+    line-height: 18px;
   }
 }
 
@@ -191,8 +204,13 @@
 
   @media (max-width: $desktop-width) {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 31px;
     margin-left: 18px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-right: 56px;
+    line-height: 32px;
   }
 }
 
@@ -211,13 +229,15 @@
   @media (max-width: $desktop-width) {
     font-size: 10px;
     line-height: 12px;
-    padding: 12px 50px 11px 49px;
-    margin-top: 31px;
+    padding: 13px 50px 12px 50px;
+    margin-top: 24px;
   }
 
   @media (max-width: $tablet-width) {
     width: 100%;
     text-align: center;
+    padding: 12px 50px 11px 49px;
+    margin-top: 31px;
   }
 }
 

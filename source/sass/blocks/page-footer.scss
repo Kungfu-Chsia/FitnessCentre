@@ -10,8 +10,12 @@
   padding-bottom: 44px;
 
   @media (max-width: $desktop-width) {
-    padding-top: 48px;
+    padding-top: 45px;
     padding-bottom: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
   }
 }
 
@@ -31,6 +35,8 @@
     display: block;
     max-height: 184px;
     column-gap: 40%;
+    width: 290px;
+    padding-right: 60px;
   }
 }
 
@@ -43,6 +49,14 @@
   @media (max-width: $tablet-width) {
     width: 68px;
     height: 15px;
+  }
+}
+
+.page-footer__social {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
 }
 

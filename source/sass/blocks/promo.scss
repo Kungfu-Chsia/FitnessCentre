@@ -16,7 +16,7 @@
   display: flex;
   width: 50%;
   margin-right: 3.5%;
-  max-height: 462px;
+  min-height: 462px;
 
   @media (max-width: $desktop-width) {
     width: 100%;

@@ -970,6 +970,10 @@ button,
   margin-bottom: -5px;
 }
 
+.page-header__logo {
+  margin-right: 15px;
+}
+
 .page-header__phone a {
   font-family: "Bebas Neue", "Arial", monospace;
   font-size: 24px;
@@ -1070,6 +1074,7 @@ button,
   margin-top: 120px;
   position: relative;
   margin-bottom: 240px;
+  padding: 0 103px;
 }
 
 .video__text-wrapper {
@@ -1819,7 +1824,7 @@ button,
   display: flex;
   width: 50%;
   margin-right: 3.5%;
-  max-height: 462px;
+  min-height: 462px;
 }
 
 .promo__blocks {
@@ -2044,7 +2049,7 @@ button,
 
 .contacts {
   margin: auto;
-  margin-top: 120px;
+  margin-top: 121px;
   max-width: 1366px;
 }
 
@@ -2067,7 +2072,7 @@ button,
   background-color: #102654;
   padding: 59px 10% 70px 102px;
   width: 50%;
-  max-height: 337px;
+  min-height: 337px;
 }
 
 .contacts h3 {
@@ -2358,6 +2363,10 @@ button,
     margin-right: 0;
   }
 
+  .page-header__resume-img img {
+    width: 324px;
+  }
+
   .page-header__resume-socials {
     display: none;
   }
@@ -2369,6 +2378,7 @@ button,
     flex-direction: column;
     margin-top: 53px;
     margin-bottom: 184px;
+    padding: 0;
   }
 
   .video__text-wrapper {
@@ -2398,25 +2408,31 @@ button,
   }
 
   .video__wrap {
-    top: 87%;
+    top: 86.5%;
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
   }
 
   .video__button {
-    top: 31%;
-    left: 38%;
+    top: 28%;
+    left: 34%;
+    width: 73px;
+    height: 73px;
   }
 
   .video__button-play {
-    width: 52px;
-    height: 52px;
+    width: 73px;
+    height: 73px;
   }
 
   .video__frame {
     width: 266px;
     height: 167px;
+  }
+
+  .video__img-wrapper {
+    padding: 0 45px;
   }
 
   .video__img-wrapper img {
@@ -2513,6 +2529,10 @@ button,
     margin-bottom: 68px;
   }
 
+  .games {
+    margin-bottom: 97px;
+  }
+
   .games__wrap {
     margin: auto;
     margin-top: 70px;
@@ -2537,17 +2557,17 @@ button,
   }
 
   .games__date {
-    margin-bottom: -1px;
+    margin-bottom: -3px;
   }
 
   .games__point-wrap p {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 17px;
   }
 
   .games__date p {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 14px;
     margin-left: 17px;
   }
 
@@ -2572,15 +2592,15 @@ button,
 
   .games__time p + p {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 31px;
     margin-left: 18px;
   }
 
   .games__point-wrap a {
     font-size: 10px;
     line-height: 12px;
-    padding: 12px 50px 11px 49px;
-    margin-top: 31px;
+    padding: 13px 50px 12px 50px;
+    margin-top: 24px;
   }
 
   .games__img {
@@ -2591,11 +2611,36 @@ button,
     font-size: 42px;
     line-height: 42px;
     text-align: center;
+    margin-bottom: 45px;
   }
 
   .trainers__swiper {
     max-width: 566px;
     width: 100%;
+  }
+
+  .trainers img {
+    width: 268px;
+  }
+
+  .trainers__card {
+    width: 268px;
+  }
+
+  .trainers__details {
+    max-width: 309px;
+  }
+
+  .trainers__details h5 {
+    line-height: 25px;
+  }
+
+  .trainers__details-list {
+    padding-right: 20px;
+  }
+
+  .trainers__wrap {
+    width: 268px;
   }
 
   .advantages h3 {
@@ -2606,7 +2651,7 @@ button,
   }
 
   .advantages {
-    margin-top: 100px;
+    margin-top: 98px;
   }
 
   .advantages__item {
@@ -2644,7 +2689,7 @@ button,
 
   .advantages__gym {
     width: 442px;
-    margin: 0 24%;
+    margin: 0 17%;
   }
 
   .advantages__comfort {
@@ -2771,15 +2816,13 @@ button,
     margin-bottom: 44px;
   }
 
-  .feedback h3 {
-    font-size: 32px;
-    line-height: 32px;
-    margin-top: 67px;
-    margin-bottom: 45px;
+  .feedback-swiper {
+    width: 566px;
   }
 
   .feedback__swiper-slide {
     width: 566px;
+    padding: 61px 59px 56px 64px;
   }
 
   .feedback__description h4 {
@@ -2792,11 +2835,15 @@ button,
   }
 
   .feedback__button-prev {
-    left: 7.6%;
+    left: 6.6%;
   }
 
   .feedback__button-next {
-    right: 7.6%;
+    right: 6.6%;
+  }
+
+  .contacts {
+    margin-top: 102px;
   }
 
   .contacts__wrapper {
@@ -2850,7 +2897,7 @@ button,
   }
 
   .page-footer__wrapper {
-    padding-top: 48px;
+    padding-top: 45px;
     padding-bottom: 45px;
   }
 
@@ -2979,8 +3026,17 @@ button,
     display: none;
   }
 
+  .page-header__resume-img img {
+    width: 100%;
+  }
+
+  .video {
+    margin-bottom: 207px;
+  }
+
   .video__text-wrapper {
     text-align: start;
+    margin: 0 15px;
   }
 
   .video__text-wrapper h3 {
@@ -3004,14 +3060,15 @@ button,
     top: 107%;
   }
 
+  .video__video-wrapper {
+    width: 320px;
+    height: 167px;
+    background-color: #003d85;
+  }
+
   .video__button {
     top: 26%;
     left: 37%;
-  }
-
-  .video__button-play {
-    width: 73px;
-    height: 73px;
   }
 
   .video__frame {
@@ -3019,7 +3076,7 @@ button,
   }
 
   .video__img-wrapper {
-    margin: 0 -15px;
+    padding: 0;
   }
 
   .abonements::after {
@@ -3029,7 +3086,7 @@ button,
   .abonements h3 {
     font-size: 32px;
     line-height: 32px;
-    padding-top: 159px;
+    padding-top: 136px;
     margin-top: 0;
     margin-bottom: 6px;
   }
@@ -3111,6 +3168,10 @@ button,
     margin-bottom: 54px;
   }
 
+  .games {
+    margin-bottom: 67px;
+  }
+
   .games__wrap {
     width: 100%;
   }
@@ -3124,8 +3185,17 @@ button,
     width: 30%;
   }
 
+  .games__date {
+    margin-bottom: -1px;
+  }
+
+  .games__point-wrap p {
+    line-height: 18px;
+  }
+
   .games__date p {
     margin-bottom: 0;
+    line-height: 18px;
   }
 
   .games__time {
@@ -3136,9 +3206,16 @@ button,
     margin-bottom: 0;
   }
 
+  .games__time p + p {
+    padding-right: 56px;
+    line-height: 32px;
+  }
+
   .games__point-wrap a {
     width: 100%;
     text-align: center;
+    padding: 12px 50px 11px 49px;
+    margin-top: 31px;
   }
 
   .games__img {
@@ -3148,6 +3225,7 @@ button,
   .trainers h3 {
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 46px;
   }
 
   .trainers__swiper {
@@ -3155,13 +3233,37 @@ button,
     max-width: 100%;
   }
 
+  .trainers img {
+    width: 226px;
+    height: 274px;
+  }
+
+  .trainers__card {
+    width: 226px;
+  }
+
   .trainers__card span {
     left: 20%;
   }
 
+  .trainers__details {
+    max-width: 270px;
+  }
+
+  .trainers__details h5 {
+    padding-top: 41px;
+    line-height: 27px;
+  }
+
+  .trainers__details span {
+    padding-bottom: 14px;
+    padding-right: 0;
+  }
+
   .trainers__details-list {
     margin-left: 0;
-    padding-right: 52px;
+    padding-right: 17px;
+    padding-left: 49px;
   }
 
   .trainers__details-list li {
@@ -3169,15 +3271,28 @@ button,
     line-height: 21px;
   }
 
+  .trainers__wrap {
+    width: 226px;
+  }
+
+  .trainers__swiper-slide {
+    width: 268px;
+  }
+
+  .trainers__swiper-slide {
+    height: 274px;
+    width: 226px;
+  }
+
   .trainers__button-prev {
-    bottom: 128px;
+    bottom: 150px;
     left: 17px;
     width: 14px;
     height: 14px;
   }
 
   .trainers__button-next {
-    bottom: 128px;
+    bottom: 150px;
     right: 17px;
     width: 14px;
     height: 14px;
@@ -3190,7 +3305,7 @@ button,
   }
 
   .advantages {
-    margin-top: 70px;
+    margin-top: 72px;
   }
 
   .advantages__list {
@@ -3361,6 +3476,13 @@ button,
     padding-left: 0;
   }
 
+  .feedback h3 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 67px;
+    margin-bottom: 45px;
+  }
+
   .feedback-swiper {
     width: 70vw;
   }
@@ -3388,7 +3510,8 @@ button,
   }
 
   .feedback__description h4 {
-    margin-bottom: 45px;
+    margin-bottom: 27px;
+    padding-top: 16px;
   }
 
   .feedback__description p {
@@ -3409,6 +3532,10 @@ button,
     height: 14px;
   }
 
+  .contacts {
+    margin-top: 69px;
+  }
+
   .contacts__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3417,8 +3544,8 @@ button,
   }
 
   .contacts__form {
-    padding: 70px 11px 0 14px;
-    max-height: 100%;
+    padding: 67px 11px 0 14px;
+    min-height: 100%;
   }
 
   .contacts h3 {
@@ -3426,14 +3553,19 @@ button,
     line-height: 32px;
   }
 
+  .contacts__input {
+    width: 100%;
+  }
+
   .contacts__input input {
-    width: 290px;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 32px;
+    min-width: 290px;
   }
 
   .contacts__btn {
-    width: 292px;
+    width: 100%;
     margin-top: 4px;
     margin-bottom: 68px;
   }
@@ -3453,6 +3585,10 @@ button,
     padding-left: 0;
   }
 
+  .page-footer__wrapper {
+    padding-top: 0;
+  }
+
   .page-footer__nav-wrap {
     padding-top: 47px;
     -webkit-column-count: 2;
@@ -3463,11 +3599,23 @@ button,
     -webkit-column-gap: 40%;
     -moz-column-gap: 40%;
     column-gap: 40%;
+    width: 290px;
+    padding-right: 60px;
   }
 
   .page-footer__icon-logo {
     width: 68px;
     height: 15px;
+  }
+
+  .page-footer__social {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .page-footer__social-list {

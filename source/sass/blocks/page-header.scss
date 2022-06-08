@@ -28,6 +28,10 @@
   }
 }
 
+.page-header__logo {
+  margin-right: 15px;
+}
+
 .page-header__icon-logo {
   @media (max-width: $desktop-width) {
     width: 82px;
@@ -191,6 +195,16 @@
 
   @media (max-width: $tablet-width) {
     display: none;
+  }
+}
+
+.page-header__resume-img img {
+  @media (max-width: $desktop-width) {
+    width: 324px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
   }
 }
 

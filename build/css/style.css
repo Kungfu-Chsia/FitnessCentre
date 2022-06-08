@@ -2083,6 +2083,7 @@ button,
   color: #ffffff;
   margin: 0;
   margin-bottom: 37px;
+  text-transform: uppercase;
 }
 
 .contacts__table form {

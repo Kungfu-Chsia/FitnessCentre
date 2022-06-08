@@ -54,6 +54,7 @@
   color: $color-default-white;
   margin: 0;
   margin-bottom: 37px;
+  text-transform: uppercase;
 
   @media (max-width: $desktop-width) {
     font-size: 42px;

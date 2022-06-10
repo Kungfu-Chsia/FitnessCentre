@@ -46,7 +46,7 @@ const initSwiper = function () {
     },
   });
 
-  const swiperFeedback = new Swiper('.feedback-swiper', {
+  const swiperFeedback = new Swiper('.feedback__swiper', {
 
     navigation: {
       prevEl: '.feedback__button-prev',
@@ -61,13 +61,6 @@ const initSwiper = function () {
 
 
   const trainersButtonPrev = document.querySelector('.trainers__button-prev');
-  // const trainersButtonNext = document.querySelector('.trainers__button-next');
-  // console.log(trainersButtonPrev)
-
-  // // const myImageSlider = document.querySelector('.swiper').swiper;
-  // // let imageSlideFirst = myImageSlider.slides[0];
-  // // let imageSlideLast = myImageSlider.slides[7];
-
 
   trainersButtonPrev.addEventListener('keydown', function (evt) {
     if (evt.shiftKey && evt.key === 'Tab') {
@@ -75,13 +68,6 @@ const initSwiper = function () {
       trainersButtonPrev.focus();
     }
   });
-
-  // trainersButtonNext.addEventListener('keydown', function (evt) {
-  //   if (evt.key === 'Tab') {
-  //     evt.preventDefault();
-  //     trainersButtonNext.focus();
-  //   }
-  // });
 
 };
 

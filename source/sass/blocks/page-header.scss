@@ -63,19 +63,18 @@
 
 .page-header__resume-list {
   @include list-style;
-  display: none;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  color: $color-default-white;
+  position: absolute;
+  width: 113px;
+  margin-top: 303px;
 
   @media (max-width: $desktop-width) {
-    display: block;
-    font-family: "Roboto Condensed", "Arial", monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: right;
-    color: $color-default-white;
-    position: absolute;
-    width: 113px;
     margin-top: 186px;
   }
 
@@ -148,7 +147,7 @@
 }
 
 .page-header__button {
-  font-family: "Roboto Condensed", "Arial", monospace;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -218,7 +217,7 @@
 }
 
 .page-header__resume-socials-item a {
-  font-family: "Roboto Condensed", "Arial", monospace;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

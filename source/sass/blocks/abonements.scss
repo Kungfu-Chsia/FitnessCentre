@@ -8,7 +8,7 @@
     content: " ";
     position: absolute;
     display: block;
-    background-image: url("../img/plates-l.webp");
+    background-image: url("../img/plates-l.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 289px;
@@ -18,7 +18,7 @@
     z-index: -1;
 
     @media (max-width: $desktop-width) {
-      background-image: url("../img/plates-m.webp");
+      background-image: url("../img/plates-m.png");
       width: 347px;
       height: 376px;
       right: -2px;
@@ -83,10 +83,9 @@
     background: rgba(120, 120, 120, 0.2);
     width: 341px;
     height: 2px;
-    top: 61px;
+    bottom: 10px;
 
     @media (max-width: $desktop-width) {
-      top: 57px;
       width: 332px;
     }
 
@@ -102,7 +101,7 @@
 }
 
 .abonements__tabs-btn {
-  font-family: "Roboto Condensed", "Arial", monospace;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
   line-height: 30px;
@@ -169,71 +168,12 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
+  border: 7px solid transparent;
 
   @media (max-width: $desktop-width) {
     width: 442px;
     margin-bottom: 41px;
-
-    &--last h4 {
-      @media (max-width: $desktop-width) {
-        margin-top: 65px;
-      }
-
-      @media (max-width: $tablet-width) {
-        margin-bottom: 53px;
-      }
-
-      @media (max-width: $tablet-width) {
-        margin-bottom: 9px;
-      }
-    }
-
-    &--last:hover h4 {
-      margin-top: 60px;
-
-      @media (max-width: $desktop-width) {
-        margin-top: 59px;
-      }
-
-      @media (max-width: $tablet-width) {
-        margin-bottom: 9px;
-      }
-    }
-
-    &--bottom {
-      margin-bottom: 37px;
-
-      @media (max-width: $tablet-width) {
-        margin-bottom: 49px;
-      }
-    }
-
-    &--bottom:hover {
-      margin-bottom: 44px;
-
-      @media (max-width: $tablet-width) {
-        margin-bottom: 32px;
-      }
-    }
-
-    &--bottom h4 {
-      @media (max-width: $desktop-width) {
-        margin-top: 61px;
-      }
-
-      @media (max-width: $tablet-width) {
-        margin-top: 45px;
-      }
-    }
-
-    &--bottom:hover h4 {
-      @media (max-width: $tablet-width) {
-        margin-bottom: 10px;
-        margin-top: 39px;
-      }
-    }
   }
-
 
   @media (max-width: $tablet-width) {
     width: 290px;
@@ -241,55 +181,14 @@
   }
 
   &:hover {
-    border: 7px solid transparent;
     border-image-slice: 1;
     border-image-source: $hover-border-gradient;
-    margin-bottom: 32px;
-
-    @media (max-width: $desktop-width) {
-      margin-bottom: 36px;
-    }
-
-    // @media (max-width: $tablet-width) {
-    //   margin-bottom: 41px;
-    // }
-
-    h4 {
-      margin-top: 54px;
-
-      @media (max-width: $desktop-width) {
-        margin-top: 57px;
-      }
-
-      @media (max-width: $tablet-width) {
-        margin-top: 41px;
-      }
-    }
 
     .abonements__item-link {
-      margin-bottom: 54px;
       color: $color-default-white;
       background: $hover-gradient;
       opacity: 1;
-      border: none;
-
-      @media (max-width: $desktop-width) {
-        margin-bottom: 65px;
-      }
-
-      @media (max-width: $tablet-width) {
-        margin-bottom: 55px;
-      }
-    }
-
-    &--bottom:hover a {
-      @media (max-width: $desktop-width) {
-        margin-bottom: 62px;
-      }
-
-      @media (max-width: $tablet-width) {
-        margin-bottom: 51px;
-      }
+      border: 0 solid transparent;
     }
   }
 }
@@ -315,7 +214,7 @@
 }
 
 .abonements__list p {
-  font-family: "Roboto Condensed", "Arial", monospace;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   margin-top: 0;
   font-size: 16px;
   line-height: 24px;
@@ -372,7 +271,7 @@
 
 .abonements__bg {
   position: absolute;
-  font-family: "Roboto Condensed", "Arial", monospace;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 100px;
   line-height: 150px;
@@ -390,7 +289,7 @@
 }
 
 .abonements__item-link {
-  font-family: "Roboto Condensed", "Arial", monospace;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;

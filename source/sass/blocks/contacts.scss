@@ -1,10 +1,13 @@
 .contacts {
   margin: auto;
   margin-top: 121px;
-  max-width: 1366px;
+  background: $color-bg-contacts;
+  border-top: 1px solid $color-mouse-grey;
 
   @media (max-width: $desktop-width) {
     margin-top: 102px;
+    background: none;
+    border-top: none;
   }
 
   @media (max-width: $tablet-width) {
@@ -14,9 +17,12 @@
 
 .contacts__wrapper {
   display: flex;
+  max-width: 1366px;
+  margin: auto;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
+    max-width: 100%;
   }
 }
 
@@ -30,12 +36,12 @@
 }
 
 .contacts__form {
-  background-color: $color-main-blue;
   padding: 59px 10% 70px 102px;
   width: 50%;
   min-height: 337px;
 
   @media (max-width: $desktop-width) {
+    background-color: $color-main-blue;
     width: 100%;
     padding: 66px 10% 61px 131px;
   }
@@ -146,7 +152,6 @@
 .contacts__info {
   padding: 58px 65px 18px 9%;
   width: 50%;
-  border-top: 1px solid $color-mouse-grey;
 
   @media (max-width: $desktop-width) {
     width: 100%;

@@ -64,8 +64,15 @@ const copySvg = () => {
       .pipe(gulp.dest('build'));
 };
 
+const createWebp = () => {
+  const root = '';
+  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest(`source/img/${root}`));
+};
+
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{webp}', {base: 'source'})
+  return gulp.src('source/img/**/*.{png,jpg,webp}', {base: 'source'})
       .pipe(gulp.dest('build'));
 };
 
@@ -73,7 +80,7 @@ const copy = () => {
   return gulp.src([
     'source/**.html',
     'source/fonts/**',
-    'source/img/**/*.{webp,svg}',
+    'source/img/**',
     'source/**.ico',
   ], {
     base: 'source',
@@ -126,12 +133,7 @@ const start = gulp.series(build, syncServer);
 // root = '' - по дефолту webp добавляются и обналяются во всех папках в source/img/
 // root = 'content/' - webp добавляются и обновляются только в source/img/content/
 
-const createWebp = () => {
-  const root = '';
-  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest(`source/img/${root}`));
-};
+
 
 const optimizeImages = () => {
   return gulp.src('build/img/**/*.{png,jpg}')

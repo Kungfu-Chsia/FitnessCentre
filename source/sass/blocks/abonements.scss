@@ -188,7 +188,8 @@
       color: $color-default-white;
       background: $hover-gradient;
       opacity: 1;
-      border: 0 solid transparent;
+      border-image-slice: 1;
+      border-image-source: $hover-border-gradient;
     }
   }
 }

@@ -959,6 +959,19 @@ button,
   background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 
+.page-header__resume-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.page-header__resume {
+  width: 459px;
+}
+
 .page-header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -974,7 +987,7 @@ button,
   margin-right: 15px;
 }
 
-.page-header__phone a {
+.page-header__phone {
   font-family: "Bebas Neue", "Arial", monospace;
   font-size: 24px;
   line-height: 24px;
@@ -999,8 +1012,21 @@ button,
 }
 
 .page-header__resume-title {
-  width: 34%;
+  width: 396px;
   margin-right: 5.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .page-header__resume-title p,
@@ -1052,6 +1078,10 @@ button,
 
 .page-header__resume-img {
   margin-right: 188px;
+}
+
+.page-header__resume-img img {
+  height: auto;
 }
 
 .page-header__resume-socials {
@@ -2315,6 +2345,10 @@ button,
     min-height: 554px;
   }
 
+  .page-header__resume {
+    width: 354px;
+  }
+
   .page-header__wrapper {
     padding-top: 39px;
     margin-bottom: 17px;
@@ -2325,7 +2359,7 @@ button,
     height: 19px;
   }
 
-  .page-header__phone a {
+  .page-header__phone {
     letter-spacing: 0.02em;
   }
 
@@ -2334,7 +2368,7 @@ button,
   }
 
   .page-header__resume-title {
-    width: 74%;
+    width: 91%;
     margin-right: 4.1%;
   }
 
@@ -2904,6 +2938,10 @@ button,
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
+  .page-header__resume {
+    width: 100%;
+  }
+
   .page-header__wrapper {
     padding-top: 19px;
   }
@@ -2913,7 +2951,7 @@ button,
     height: 15px;
   }
 
-  .page-header__phone a {
+  .page-header__phone {
     font-size: 20px;
     line-height: 20px;
   }
@@ -2924,7 +2962,7 @@ button,
 
   .page-header__resume-title {
     margin-right: 0;
-    width: 100%;
+    width: 290px;
   }
 
   .page-header__resume-title p {

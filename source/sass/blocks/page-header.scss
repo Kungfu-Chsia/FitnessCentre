@@ -12,6 +12,23 @@
   }
 }
 
+.page-header__resume-inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-header__resume {
+  width: 459px;
+
+  @media (max-width: $desktop-width) {
+    width: 354px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -44,7 +61,7 @@
   }
 }
 
-.page-header__phone a {
+.page-header__phone {
   font-family: "Bebas Neue", "Arial", monospace;
   font-size: 24px;
   line-height: 24px;
@@ -84,17 +101,21 @@
 }
 
 .page-header__resume-title {
-  width: 34%;
+  width: 396px;
   margin-right: 5.5%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
 
   @media (max-width: $desktop-width) {
-    width: 74%;
+    width: 91%;
     margin-right: 4.1%;
   }
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
-    width: 100%;
+    width: 290px;
   }
 }
 
@@ -198,6 +219,8 @@
 }
 
 .page-header__resume-img img {
+  height: auto;
+
   @media (max-width: $desktop-width) {
     width: 324px;
   }

@@ -17,30 +17,23 @@ const initSwiper = function () {
       320: {
         // Количество слайдов на странице
         slidesPerView: 1,
-        // С какого слайда начинать
+        // порядковый номер первого слайда
         initialSlide: 2,
       },
       768: {
         slidesPerView: 2,
         // Отступ между слайдами
         spaceBetween: 30,
-        // С какого слайда начинать
         initialSlide: 2,
       },
       1200: {
-        // Колличество слайдов на странице
         slidesPerView: 3,
-        // Отступ между слайдами
         spaceBetween: 40,
-        // С какого слайда начинать
         initialSlide: 0,
       },
       1366: {
-        // Колличество слайдов на странице
         slidesPerView: 4,
-        // Отступ между слайдами
         spaceBetween: 40,
-        // С какого слайда начинать
         initialSlide: 0,
       },
     },
@@ -59,14 +52,67 @@ const initSwiper = function () {
 
   });
 
-
+  const imageSlider = document.querySelector('.swiper').swiper;
   const trainersButtonPrev = document.querySelector('.trainers__button-prev');
+  const trainersButtonNext = document.querySelector('.trainers__button-next');
+  const gamesBtn = document.querySelector('.games__btn');
+  const promoButton = document.querySelector('.promo__unlim-link');
+
+  const firstSlide = imageSlider.slides[0];
+  const lastSlide = imageSlider.slides[7];
+
+
+  gamesBtn.addEventListener('keydown', function (evt) {
+    if (!evt.shiftKey && evt.key === 'Tab') {
+      evt.preventDefault();
+      trainersButtonPrev.focus();
+      console.log('gamesBtn',trainersButtonPrev);
+    }
+  });
+
 
   trainersButtonPrev.addEventListener('keydown', function (evt) {
     if (evt.shiftKey && evt.key === 'Tab') {
       evt.preventDefault();
-      trainersButtonPrev.focus();
+      gamesBtn.focus();
+      console.log('trainersButtonPrev',gamesBtn);
     }
+  });
+
+
+  trainersButtonNext.addEventListener('keydown', function (evt) {
+    if (!evt.shiftKey && evt.key === 'Tab') {
+      evt.preventDefault();
+      firstSlide.focus();
+      imageSlider.slideTo(firstSlide.index, 800);
+      console.log('trainersButtonNext',firstSlide);
+    }
+  });
+
+
+  firstSlide.addEventListener('keydown', function (evt) {
+    if (evt.shiftKey && evt.key === 'Tab') {
+      evt.preventDefault();
+      trainersButtonNext.focus();
+      console.log('firstSlide',trainersButtonNext);
+    }
+  });
+
+
+  lastSlide.addEventListener('keydown', function (evt) {
+    if (!evt.shiftKey && evt.key === 'Tab') {
+      evt.preventDefault();
+      promoButton.focus();
+      console.log('lastSlide',promoButton);
+    }
+
+    promoButton.addEventListener('keydown', function (event) {
+      if (event.shiftKey && event.key === 'Tab') {
+        event.preventDefault();
+        lastSlide.focus();
+        console.log('promoButton',lastSlide);
+      }
+    });
   });
 
 };

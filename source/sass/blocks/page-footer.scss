@@ -82,6 +82,8 @@
 }
 
 .page-footer__sections {
+  @include list-style;
+  display: flex;
   margin-left: 42px;
   margin-bottom: 10px;
 
@@ -92,6 +94,7 @@
   @media (max-width: $tablet-width) {
     margin-left: 0;
     margin-bottom: 17px;
+    display: block;
   }
 }
 
@@ -113,6 +116,12 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 16px;
   }
+}
+
+.page-footer__social-link {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 .page-footer__socal-icon-vk {

@@ -130,10 +130,6 @@
   position: absolute;
   left: 34%;
 
-  &:hover svg {
-    fill: $color-red;
-  }
-
   @media (max-width: $desktop-width) {
     top: 28%;
     left: 34%;
@@ -145,6 +141,10 @@
     top: 26%;
     left: 37%;
   }
+}
+
+.video__button:hover svg {
+  fill: $color-red;
 }
 
 .video__button-play {

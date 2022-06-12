@@ -175,74 +175,40 @@
   }
 }
 
-.trainers__wrap {
-  position: relative;
-  margin-right: 40px;
-  width: 260px;
-
-  &:hover .trainers__details {
-    display: block;
-    scrollbar-width: none;
-    overflow: auto;
-  }
-
-  &:hover .trainers__name {
-    display: none;
-  }
-
-  &:focus-within .trainers__details {
-    display: block;
-    outline-offset: 2px;
-  }
-
-  @media (max-width: $desktop-width) {
-    width: 268px;
-  }
-
-  @media (max-width: $tablet-width) {
-    width: 226px;
-  }
+.trainers__swiper-slide:hover .trainers__details {
+  display: block;
+  scrollbar-width: none;
+  overflow: auto;
 }
 
-.trainers__button-prev,
-.trainers__button-next {
+.trainers__swiper-slide:hover .trainers__name {
+  display: none;
+}
+
+.trainers__swiper-slide:focus .trainers__details {
+  display: block;
+  outline-offset: 2px;
+}
+
+.trainers__swiper-slide:focus-within .trainers__details {
+  display: block;
+  outline-offset: 2px;
+}
+
+.trainers__button {
   position: absolute;
   bottom: 135px;
-  width: 23px;
-  height: 23px;
-  background-color: transparent;
-  border: 1px solid #afafaf;
-  border-style: solid solid none none;
-  cursor: pointer;
-}
-
-.trainers__swiper-slide {
-  position: relative;
-  width: 260px;
-  height: 294px;
-
-  @media (max-width: $tablet-width) {
-    width: 268px;
-  }
-
-  @media (max-width: $tablet-width) {
-    height: 274px;
-    width: 226px;
-  }
-}
-
-
-.trainers__button-prev {
-  position: absolute;
-  bottom: 135px;
-  left: 51px;
   width: 23px;
   height: 23px;
   background-color: transparent;
   border: 1px solid $color-arrow-grey;
   border-style: solid solid none none;
+}
+
+.trainers__button-prev {
   transform: rotate(225deg);
   cursor: pointer;
+  left: 51px;
 
   &:hover {
     opacity: 0.3;
@@ -257,16 +223,9 @@
 }
 
 .trainers__button-next {
-  position: absolute;
-  bottom: 135px;
-  right: 51px;
-  width: 23px;
-  height: 23px;
-  background-color: transparent;
-  border: 1px solid $color-arrow-grey;
-  border-style: solid solid none none;
   transform: rotate(45deg);
   cursor: pointer;
+  right: 51px;
 
   &:hover {
     opacity: 0.3;

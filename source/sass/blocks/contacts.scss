@@ -36,7 +36,7 @@
 }
 
 .contacts__form {
-  padding: 59px 10% 70px 102px;
+  padding: 59px 7% 70px 102px;
   width: 50%;
   min-height: 337px;
 
@@ -157,6 +157,7 @@
     width: 100%;
     padding: 64px 65px 63px 133px;
     border-top: none;
+    max-width: 768px;
   }
 
   @media (max-width: $tablet-width) {

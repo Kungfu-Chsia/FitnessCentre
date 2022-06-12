@@ -963,9 +963,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: relative;
 }
 
 .page-header__resume {
@@ -1089,6 +1090,9 @@ button,
   padding-left: 0;
   list-style: none;
   margin-top: 428px;
+  position: absolute;
+  bottom: 78px;
+  right: 0;
 }
 
 .page-header__resume-socials-item a {
@@ -1599,29 +1603,27 @@ button,
   margin-bottom: 14px;
 }
 
-.trainers__wrap {
-  position: relative;
-  margin-right: 40px;
-  width: 260px;
-}
-
-.trainers__wrap:hover .trainers__details {
+.trainers__swiper-slide:hover .trainers__details {
   display: block;
   scrollbar-width: none;
   overflow: auto;
 }
 
-.trainers__wrap:hover .trainers__name {
+.trainers__swiper-slide:hover .trainers__name {
   display: none;
 }
 
-.trainers__wrap:focus-within .trainers__details {
+.trainers__swiper-slide:focus .trainers__details {
   display: block;
   outline-offset: 2px;
 }
 
-.trainers__button-prev,
-.trainers__button-next {
+.trainers__swiper-slide:focus-within .trainers__details {
+  display: block;
+  outline-offset: 2px;
+}
+
+.trainers__button {
   position: absolute;
   bottom: 135px;
   width: 23px;
@@ -1629,28 +1631,14 @@ button,
   background-color: transparent;
   border: 1px solid #afafaf;
   border-style: solid solid none none;
-  cursor: pointer;
-}
-
-.trainers__swiper-slide {
-  position: relative;
-  width: 260px;
-  height: 294px;
 }
 
 .trainers__button-prev {
-  position: absolute;
-  bottom: 135px;
-  left: 51px;
-  width: 23px;
-  height: 23px;
-  background-color: transparent;
-  border: 1px solid #afafaf;
-  border-style: solid solid none none;
   -webkit-transform: rotate(225deg);
   -ms-transform: rotate(225deg);
   transform: rotate(225deg);
   cursor: pointer;
+  left: 51px;
 }
 
 .trainers__button-prev:hover {
@@ -1658,18 +1646,11 @@ button,
 }
 
 .trainers__button-next {
-  position: absolute;
-  bottom: 135px;
-  right: 51px;
-  width: 23px;
-  height: 23px;
-  background-color: transparent;
-  border: 1px solid #afafaf;
-  border-style: solid solid none none;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   cursor: pointer;
+  right: 51px;
 }
 
 .trainers__button-next:hover {
@@ -2108,7 +2089,7 @@ button,
 }
 
 .contacts__form {
-  padding: 59px 10% 70px 102px;
+  padding: 59px 7% 70px 102px;
   width: 50%;
   min-height: 337px;
 }
@@ -2279,6 +2260,12 @@ button,
 }
 
 .page-footer__sections {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 42px;
   margin-bottom: 10px;
 }
@@ -2294,6 +2281,12 @@ button,
   -ms-flex-pack: start;
   justify-content: start;
   margin-right: auto;
+}
+
+.page-footer__social-link {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -2642,10 +2635,6 @@ button,
     padding-right: 20px;
   }
 
-  .trainers__wrap {
-    width: 268px;
-  }
-
   .advantages h3 {
     font-size: 42px;
     line-height: 42px;
@@ -2884,6 +2873,7 @@ button,
     width: 100%;
     padding: 64px 65px 63px 133px;
     border-top: none;
+    max-width: 768px;
   }
 
   .contacts__address h4,
@@ -3223,19 +3213,6 @@ button,
   .trainers__details-list li {
     font-size: 14px;
     line-height: 21px;
-  }
-
-  .trainers__wrap {
-    width: 226px;
-  }
-
-  .trainers__swiper-slide {
-    width: 268px;
-  }
-
-  .trainers__swiper-slide {
-    height: 274px;
-    width: 226px;
   }
 
   .trainers__button-prev {
@@ -3580,6 +3557,7 @@ button,
   .page-footer__sections {
     margin-left: 0;
     margin-bottom: 17px;
+    display: block;
   }
 
   .page-footer__sections a {

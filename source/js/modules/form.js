@@ -1,6 +1,7 @@
 // **  tel validation **//
 const initForma = function () {
   const formContactsInput = document.getElementById('telephone');
+  const contactsForm = document.getElementById('contacts-form');
 
   const checkNumber = () => {
     const minTitleName = 11;
@@ -88,6 +89,40 @@ const initForma = function () {
     formContactsInputName2.addEventListener('input', checkNameModal);
 
   }
+
+
+  // Сохранениe данных в localStorage
+
+  function setLocalArg(event) {
+    let currArg = event.path[0];
+    localStorage.setItem(currArg.id, currArg.value);
+  }
+
+  document.querySelectorAll('input').forEach((inputElement) => {
+
+    inputElement.value = localStorage.getItem(inputElement.id);
+    inputElement.addEventListener('change', setLocalArg);
+  });
+
+
+  //  Отправка формы
+
+  if (contactsForm) {
+    const btnSubmit = (evt) => {
+      evt.preventDefault();
+      const formData = new FormData(evt.target);
+      fetch(
+          'https://echo.htmlacademy.ru/',
+          {
+            method: 'POST',
+            body: formData,
+          }
+      );
+      evt.target.reset();
+    };
+    contactsForm.addEventListener('submit', btnSubmit);
+  }
+
 
 };
 

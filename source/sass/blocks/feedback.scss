@@ -1,5 +1,17 @@
 .feedback {
   position: relative;
+  padding-top: 114px;
+  margin-bottom: 121px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 94px;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 67px;
+    margin-bottom: 69px;
+  }
 }
 
 .feedback h3 {
@@ -9,20 +21,18 @@
   letter-spacing: 0.03em;
   text-align: center;
   position: relative;
-  margin-top: 114px;
+  margin-top: 0;
   margin-bottom: 54px;
 
   @media (max-width: $desktop-width) {
     font-size: 42px;
     line-height: 42px;
-    margin-top: 94px;
     margin-bottom: 44px;
   }
 
   @media (max-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin-top: 67px;
     margin-bottom: 45px;
   }
 }
@@ -48,12 +58,12 @@
 
   @media (max-width: $desktop-width) {
     width: 566px;
-    padding: 61px 59px 56px 64px;
+    padding: 61px 59px 59px 64px;
   }
 
   @media (max-width: $tablet-width) {
     width: 226px;
-    padding: 40px 12px 36px 26px;
+    padding: 41px 12px 36px 26px;
     display: block;
   }
 }
@@ -130,8 +140,8 @@
 
 .feedback__button-prev {
   position: absolute;
-  top: 60%;
-  left: 21.4%;
+  top: 71%;
+  left: 26%;
   width: 23px;
   height: 23px;
   background-color: transparent;
@@ -150,11 +160,12 @@
 
   @media (max-width: $desktop-width) {
     left: 6.6%;
+    top: 69%;
   }
 
   @media (max-width: $tablet-width) {
     left: 5.4%;
-    top: 240px;
+    top: 307px;
     width: 14px;
     height: 14px;
   }
@@ -162,8 +173,8 @@
 
 .feedback__button-next {
   position: absolute;
-  top: 60%;
-  right: 21.4%;
+  top: 71%;
+  right: 26%;
   width: 23px;
   height: 23px;
   background-color: transparent;
@@ -182,10 +193,11 @@
 
   @media (max-width: $desktop-width) {
     right: 6.6%;
+    top: 69%;
   }
 
   @media (max-width: $tablet-width) {
-    top: 240px;
+    top: 307px;
     right: 5.4%;
     width: 14px;
     height: 14px;

@@ -22,7 +22,7 @@
       width: 347px;
       height: 376px;
       right: -2px;
-      bottom: -28px;
+      bottom: -55px;
     }
 
     @media (max-width: $tablet-width) {
@@ -50,7 +50,7 @@
   @media (max-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    padding-top: 136px;
+    padding-top: 66px;
     margin-top: 0;
     margin-bottom: 6px;
   }
@@ -132,6 +132,7 @@
 .abonements__list {
   @include list-style;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   @media (max-width: $desktop-width) {
@@ -154,6 +155,10 @@
 
   &--current {
     display: block;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 63px;
   }
 
   @media (max-width: $tablet-width) {
@@ -200,17 +205,17 @@
   line-height: 29px;
   display: flex;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 56px;
   margin-bottom: 10px;
 
   @media (max-width: $desktop-width) {
-    margin-top: 63px;
+    margin-top: 57px;
   }
 
   @media (max-width: $tablet-width) {
     font-size: 22px;
     line-height: 24px;
-    margin-top: 49px;
+    margin-top: 41px;
   }
 }
 
@@ -299,14 +304,14 @@
   color: $color-main-blue;
   border: 2px solid $color-main-blue;
   padding: 24px 44px;
-  margin-bottom: 67px;
+  margin-bottom: 59px;
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 68px;
+    margin-bottom: 57px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 48px;
   }
 }
 

@@ -57,10 +57,14 @@ const initSwiper = function () {
   const trainersButtonNext = document.querySelector('.trainers__button-next');
   const gamesBtn = document.querySelector('.games__btn');
   const promoButton = document.querySelector('.promo__unlim-link');
+  const swiperSlides = document.querySelectorAll('.trainers__swiper-slide');
 
   const firstSlide = imageSlider.slides[0];
   const lastSlide = imageSlider.slides[7];
 
+  swiperSlides.forEach(function (swiperSlide) {
+    swiperSlide.tabIndex = '0';
+  });
 
   gamesBtn.addEventListener('keydown', function (evt) {
     if (!evt.shiftKey && evt.key === 'Tab') {

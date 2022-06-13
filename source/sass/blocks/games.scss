@@ -12,19 +12,20 @@
 
 .games__wrap {
   background-color: $color-bg-red;
-  margin-top: 117px;
+  margin-top: 115px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   @media (max-width: $desktop-width) {
     margin: auto;
-    margin-top: 70px;
+    margin-top: 97px;
     width: 678px;
   }
 
   @media (max-width: $tablet-width) {
     width: 100%;
+    margin-top: 70px;
   }
 }
 
@@ -52,7 +53,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 43%;
-  padding: 80px 6.6% 7% 79px;
+  padding: 78px 6.6% 7% 79px;
   margin: 0;
 
   @media (max-width: 1358px) {
@@ -87,7 +88,7 @@
 }
 
 .games__date {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 
   @media (max-width: $desktop-width) {
     margin-bottom: -3px;
@@ -123,7 +124,7 @@
   align-items: center;
   position: relative;
   margin-left: 14px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 
   @media (max-width: $desktop-width) {
     font-size: 12px;
@@ -139,7 +140,7 @@
 
 .games__date p + p {
   font-size: 40px;
-  line-height: 56px;
+  line-height: 53px;
   font-weight: 700;
   display: flex;
   border-top: 1px solid $color-default-white;

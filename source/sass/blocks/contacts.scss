@@ -1,17 +1,11 @@
 .contacts {
   margin: auto;
-  margin-top: 121px;
   background: $color-bg-contacts;
   border-top: 1px solid $color-mouse-grey;
 
   @media (max-width: $desktop-width) {
-    margin-top: 102px;
     background: none;
     border-top: none;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin-top: 69px;
   }
 }
 
@@ -36,14 +30,15 @@
 }
 
 .contacts__form {
-  padding: 59px 7% 70px 102px;
+  padding: 57px 7% 55px 102px;
   width: 50%;
   min-height: 337px;
 
   @media (max-width: $desktop-width) {
     background-color: $color-main-blue;
     width: 100%;
-    padding: 66px 10% 61px 131px;
+    padding: 66px 10% 60px 131px;
+    min-height: 324px;
   }
 
   @media (max-width: $tablet-width) {
@@ -79,8 +74,15 @@
 }
 
 .contacts__input {
+  margin-right: 28px;
+
+  @media (max-width: $desktop-width) {
+    margin-right: 61px;
+  }
+
   @media (max-width: $tablet-width) {
     width: 100%;
+    margin-right: 0;
   }
 }
 
@@ -92,7 +94,6 @@
   font-size: 14px;
   line-height: 16px;
   width: 190px;
-  margin-right: 28px;
   padding-bottom: 5px;
 
   &::placeholder {
@@ -101,13 +102,11 @@
 
   @media (max-width: $desktop-width) {
     width: 206px;
-    margin-right: 61px;
     padding-bottom: 6px;
   }
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    margin-right: 0;
     margin-bottom: 32px;
     min-width: 290px;
   }
@@ -136,6 +135,7 @@
     width: 100%;
     margin-top: 4px;
     margin-bottom: 68px;
+    padding-bottom: 15px;
   }
 }
 
@@ -155,7 +155,7 @@
 
   @media (max-width: $desktop-width) {
     width: 100%;
-    padding: 64px 65px 63px 133px;
+    padding: 64px 65px 46px 133px;
     border-top: none;
     max-width: 768px;
   }
@@ -195,7 +195,7 @@
 
 .contacts__time p,
 .contacts__mail p {
-  margin-bottom: 0;
+  margin-bottom: 18px;
 }
 
 .contacts__address {

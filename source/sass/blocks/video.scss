@@ -1,9 +1,11 @@
 .video {
   display: flex;
-  margin-top: 120px;
+  margin: auto;
+  padding-top: 120px;
   position: relative;
-  margin-bottom: 240px;
-  padding: 0 103px;
+  padding-bottom: 240px;
+  max-width: 1366px;
+  justify-content: center;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
@@ -19,13 +21,15 @@
 
 .video__text-wrapper {
   width: 31.5%;
-  margin-left: 60px;
-  margin-right: 6.4%;
+  margin-left: 57px;
+  margin-right: 0.7%;
+  padding-right: 71px;
 
   @media (max-width: $desktop-width) {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
+    padding-right: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -80,7 +84,7 @@
   margin-top: 0;
 
   @media (max-width: $desktop-width) {
-    width: 77%;
+    width: 67%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 41px;
@@ -101,7 +105,7 @@
 
 .video__wrap {
   position: absolute;
-  bottom: -29%;
+  bottom: 16.5%;
   right: 50%;
   transform: translateX(61%);
 

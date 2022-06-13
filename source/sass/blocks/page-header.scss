@@ -183,6 +183,10 @@
   margin-bottom: 94px;
   margin-top: -8px;
 
+  @media (min-width: 1200px) and (max-width: 1251px) {
+    margin-left: 147px;
+  }
+
   @media (max-width: $desktop-width) {
     margin-left: 137px;
     margin-bottom: 0;

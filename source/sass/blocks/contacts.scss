@@ -76,6 +76,10 @@
 .contacts__input {
   margin-right: 28px;
 
+  @media (min-width: 1200px) and (max-width: 1251px) {
+    margin-right: 17px;
+  }
+
   @media (max-width: $desktop-width) {
     margin-right: 61px;
   }
@@ -161,12 +165,11 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 70px 15px 66px 15px;
+    padding: 70px 15px 45px 15px;
   }
 }
 
-.contacts__address h4,
-.contacts__phone h4 {
+.contacts__wrap h4 {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -176,12 +179,11 @@
   @media (max-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 }
 
-.contacts__address p,
-.contacts__phone p {
+.contacts__wrap p {
   font-size: 14px;
   line-height: 21px;
   margin: 0;
@@ -193,11 +195,6 @@
   }
 }
 
-.contacts__time p,
-.contacts__mail p {
-  margin-bottom: 18px;
-}
-
 .contacts__address {
   border-right: 1px solid $color-mouse-grey;
   width: 47%;
@@ -205,7 +202,6 @@
   @media (max-width: $tablet-width) {
     width: 100%;
     border-right: none;
-    margin-bottom: 20px;
   }
 }
 

@@ -1,15 +1,12 @@
 .advantages {
-  margin-top: 120px;
   background-color: $color-bg-grey;
   padding-bottom: 82px;
 
   @media (max-width: $desktop-width) {
-    margin-top: 98px;
     padding-bottom: 51px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 72px;
     padding-bottom: 69px;
   }
 }
@@ -210,7 +207,7 @@
 
     @media (max-width: $desktop-width) {
       border-top: none;
-      padding-top: 24px;
+      padding-top: 28px;
     }
 
     @media (max-width: $tablet-width) {
@@ -287,8 +284,12 @@
 
   @media (max-width: $desktop-width) {
     padding-left: 0;
-    padding-top: 18px;
+    padding-top: 14px;
     margin: auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 19px;
   }
 }
 

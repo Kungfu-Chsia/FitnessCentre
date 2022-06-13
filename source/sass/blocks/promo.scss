@@ -162,8 +162,7 @@
   }
 }
 
-.promo__month h4,
-.promo__discont h4 {
+.promo__promotion h4 {
   font-weight: 700;
   font-size: 26px;
   line-height: 46px;
@@ -183,8 +182,23 @@
   }
 }
 
-.promo__month p,
-.promo__discont p {
+.promo__promotion {
+  border: 7px solid transparent;
+  border-image-slice: 1;
+  border-image-source: $hover-border-gradient;
+  padding-left: 27px;
+
+  @media (max-width: $desktop-width) {
+    width: 48%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.promo__promotion p {
   font-size: 16px;
   line-height: 24px;
   color: $color-dark-blue;
@@ -210,8 +224,7 @@
   }
 }
 
-.promo__month a,
-.promo__discont a {
+.promo__promotion a {
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
@@ -234,37 +247,14 @@
 }
 
 .promo__month {
-  border: 7px solid transparent;
-  border-image-slice: 1;
-  border-image-source: $hover-border-gradient;
-  padding-left: 27px;
   margin-bottom: 40px;
 
   @media (max-width: $desktop-width) {
-    width: 48%;
     margin-right: 4%;
     margin-bottom: 0;
   }
 
   @media (max-width: $tablet-width) {
-    width: 100%;
     margin-bottom: 30px;
-    padding-left: 0;
-  }
-}
-
-.promo__discont {
-  border: 7px solid transparent;
-  border-image-slice: 1;
-  border-image-source: $hover-border-gradient;
-  padding-left: 27px;
-
-  @media (max-width: $desktop-width) {
-    width: 48%;
-  }
-
-  @media (max-width: $tablet-width) {
-    width: 100%;
-    padding-left: 0;
   }
 }

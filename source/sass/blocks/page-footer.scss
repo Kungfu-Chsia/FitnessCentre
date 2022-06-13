@@ -123,15 +123,10 @@
 }
 
 .page-footer__social-link {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   display: block;
   text-align: center;
-
-  @media (max-width: $desktop-width) {
-    width: 30px;
-    height: 30px;
-  }
 
   @media (max-width: $tablet-width) {
     width: 40px;

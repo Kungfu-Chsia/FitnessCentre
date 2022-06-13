@@ -2265,8 +2265,8 @@ button,
 }
 
 .page-footer__social-link {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   display: block;
   text-align: center;
 }
@@ -2898,11 +2898,6 @@ button,
 
   .page-footer__sections {
     margin-left: 30px;
-  }
-
-  .page-footer__social-link {
-    width: 30px;
-    height: 30px;
   }
 }
 

@@ -19,7 +19,7 @@
     <header class="page-header">
       <div class="container">
         <div class="page-header__wrapper">
-          <a class="page-header__logo" href="#" aria-label="logo">
+          <a class="page-header__logo" aria-label="logo">
             <svg class="page-header__icon-logo" width="89" height="20">
               <use xlink:href="img/sprite/sprite.svg#gym"></use>
             </svg>
@@ -113,8 +113,8 @@
           <h3>Абонементы</h3>
           <div class="abonements__tabs">
             <ul class="abonements__tabs-list">
-              <li class="abonements__tabs-item"><button class="btn abonements__tabs-btn js-btn " data-id="tab-month" type="button">1 месяц</button></li>
-              <li class="abonements__tabs-item"><button class="btn abonements__tabs-btn js-btn abonements__tabs-btn--current" data-id="tab-6month" type="button">6 месяцев</button></li>
+              <li class="abonements__tabs-item"><button class="btn abonements__tabs-btn js-btn abonements__tabs-btn--current" data-id="tab-month" type="button">1 месяц</button></li>
+              <li class="abonements__tabs-item"><button class="btn abonements__tabs-btn js-btn" data-id="tab-6month" type="button">6 месяцев</button></li>
               <li class="abonements__tabs-item"><button class="btn abonements__tabs-btn js-btn" data-id="tab-12month" type="button">12 месяцев</button></li>
             </ul>
           </div>
@@ -607,11 +607,12 @@
               <div class="contacts__phone">
                 <div>
                   <h4>Телефон:</h4>
-                  <p>8-800-555-55-55</p>
+                  <a href="tel:88005555555" aria-label="телефон Фитнес центра">8-800-555-55-55</a>
                 </div>
                 <div class="contacts__mail">
                   <h4>Email:</h4>
-                  <p>omsk@supergym.ru</p>
+                  <a href="mailto:omsk@supergym.ru" aria-label="почта Фитнес центра">omsk@supergym.ru</a>
+                  <!-- <p>omsk@supergym.ru</p> -->
                 </div>
               </div>
             </div>
@@ -624,7 +625,7 @@
       <div class="page-footer__wrapper container">
         <div class="page-footer__nav-wrap">
           <div class="page-footer__logo-wrap">
-            <a href="#" class="page-footer__logolink" aria-label="logo">
+            <a class="page-footer__logolink" aria-label="logo">
               <svg class="page-footer__icon-logo" width="89" height="20">
                 <use xlink:href="img/sprite/sprite.svg#gym"></use>
               </svg>

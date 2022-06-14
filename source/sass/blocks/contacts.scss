@@ -183,6 +183,20 @@
   }
 }
 
+.contacts__wrap a {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 18px;
+  color: $color-main-blue;
+  display: block;
+
+  @media (max-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
 .contacts__wrap p {
   font-size: 14px;
   line-height: 21px;

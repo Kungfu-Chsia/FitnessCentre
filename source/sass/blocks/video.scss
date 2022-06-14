@@ -34,7 +34,7 @@
 
   @media (max-width: $tablet-width) {
     text-align: start;
-    margin: 0 15px;
+    padding: 0 15px;
   }
 }
 
@@ -91,7 +91,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 84%;
+    width: 92%;
     margin: 0;
     margin-bottom: 32px;
   }
@@ -110,7 +110,7 @@
   transform: translateX(61%);
 
   @media (max-width: $desktop-width) {
-    bottom: -13.5%;
+    bottom: -14.5%;
     transform: translateX(50%);
   }
 
@@ -124,6 +124,21 @@
     width: 320px;
     height: 167px;
     background-color: $color-gradient-blue;
+  }
+}
+
+.video__iframe {
+  border: none;
+  width: 364px;
+  height: 228px;
+
+  @media (max-width: $desktop-width) {
+    width: 266px;
+    height: 167px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 320px;
   }
 }
 

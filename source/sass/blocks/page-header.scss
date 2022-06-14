@@ -48,6 +48,10 @@
 
 .page-header__logo {
   margin-right: 15px;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .page-header__icon-logo {

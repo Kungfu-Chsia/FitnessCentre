@@ -24,7 +24,7 @@ const initVideo = function () {
         iframe.setAttribute('allow', 'autoplay');
         iframe.setAttribute('allowfullscreen', '');
         iframe.setAttribute('src', generateURL());
-        iframe.classList.add('gym__ambed');
+        iframe.classList.add('video__iframe');
 
         return iframe;
       };

@@ -83,6 +83,7 @@
   padding-left: 45px;
   padding-right: 40px;
   width: 50%;
+  position: relative;
 
   @media (max-width: $desktop-width) {
     width: 41%;
@@ -149,6 +150,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-bottom: 1px solid $color-default-white;
+  position: absolute;
+  bottom: 45px;
 
   @media (max-width: $desktop-width) {
     margin-bottom: 44px;
@@ -159,6 +162,7 @@
   @media (max-width: $tablet-width) {
     margin: auto;
     margin-bottom: 45px;
+    position: static;
   }
 }
 
@@ -211,7 +215,7 @@
 
   @media (max-width: $tablet-width) {
     width: 82%;
-    padding-left: 57px;
+    margin: auto;
     margin-bottom: 25px;
     padding-right: 0;
   }

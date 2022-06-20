@@ -229,6 +229,10 @@
   border: 2px solid $color-default-white;
   margin-top: 34px;
 
+  @media (min-width: 1200px) and (max-width: 1244px) {
+    padding: 24px 90px 18px 110px;
+  }
+
   @media (max-width: $desktop-width) {
     font-size: 10px;
     line-height: 12px;

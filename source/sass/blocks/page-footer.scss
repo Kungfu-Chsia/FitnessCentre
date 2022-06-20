@@ -21,7 +21,6 @@
 
 .page-footer__nav-wrap {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   width: 68.9%;
 
@@ -33,7 +32,6 @@
     padding-top: 47px;
     column-count: 2;
     display: block;
-    max-height: 184px;
     column-gap: 40%;
     width: 290px;
     padding-right: 60px;
@@ -57,6 +55,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    padding-top: 14px;
   }
 }
 
@@ -91,6 +90,7 @@
   margin-left: 42px;
   margin-bottom: 10px;
   padding-top: 2px;
+  flex-wrap: wrap;
 
   @media (max-width: $desktop-width) {
     margin-left: 30px;

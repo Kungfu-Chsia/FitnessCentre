@@ -139,7 +139,6 @@
   @include list-style;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
@@ -147,8 +146,8 @@
   }
 }
 
-.abonements__list li:nth-child(-n+2) {
-  margin-right: 3%;
+.abonements__list li:not(:nth-child(3n)) {
+  margin-right: 40px;
 
   @media (max-width: $desktop-width) {
     margin-right: 0;

@@ -34,6 +34,15 @@
   }
 }
 
+.advantages__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+  }
+}
+
 .advantages__number span {
   font-weight: 700;
   font-size: 71px;
@@ -280,10 +289,10 @@
 
 .advantages__gym .advantages__number {
   padding-top: 36px;
-  padding-left: 61px;
+  margin: 0 auto;
+  padding-left: 0;
 
   @media (max-width: $desktop-width) {
-    padding-left: 0;
     padding-top: 14px;
     margin: auto;
   }

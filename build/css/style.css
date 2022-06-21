@@ -1842,6 +1842,11 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   width: 50%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .promo h3 {
@@ -1938,10 +1943,6 @@ button,
   margin-bottom: 30px;
   display: block;
   width: 70px;
-}
-
-.promo__month {
-  margin-bottom: 40px;
 }
 
 .feedback {
@@ -2302,6 +2303,12 @@ button,
   .btn:hover,
   .btn:focus {
     opacity: 0.8;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo__blocks div:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 
@@ -2750,7 +2757,6 @@ button,
   .promo__unlim {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 29px;
   }
 
   .promo__blocks {
@@ -2791,6 +2797,7 @@ button,
 
   .promo__promotion {
     width: 48%;
+    margin-top: 29px;
   }
 
   .promo__promotion p {
@@ -2804,11 +2811,6 @@ button,
 
   .promo__promotion a {
     margin-bottom: 28px;
-  }
-
-  .promo__month {
-    margin-right: 4%;
-    margin-bottom: 0;
   }
 
   .feedback {
@@ -3444,10 +3446,6 @@ button,
   .promo__promotion a {
     margin: auto;
     margin-bottom: 38px;
-  }
-
-  .promo__month {
-    margin-bottom: 30px;
   }
 
   .feedback {
